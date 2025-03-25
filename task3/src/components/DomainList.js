@@ -42,25 +42,88 @@ const DomainList = () => {
           </div>
         </TabPanel>
         <TabPanel>
-          <p>Web Hosting plans will be displayed here.</p>
+          <p><div className="card-container">
+            {domainData.map((domain, index) => (
+              <div key={index} className="card">
+                <h3>{domain.name}</h3>
+                <p className="price">{domain.price}</p>
+                <p className="discounted-price">Instead of $10.99/yr</p>
+                <button className="buy-now">Buy Now</button>
+              </div>
+            ))}
+          </div></p>
         </TabPanel>
         <TabPanel>
-          <p>Dedicated Server plans will be displayed here.</p>
+        <p><div className="card-container">
+            {domainData.map((domain, index) => (
+              <div key={index} className="card">
+                <h3>{domain.name}</h3>
+                <p className="price">{domain.price}</p>
+                <p className="discounted-price">Instead of $10.99/yr</p>
+                <button className="buy-now">Buy Now</button>
+              </div>
+            ))}
+          </div></p>
         </TabPanel>
         <TabPanel>
-          <p>Virtual Cloud Server plans will be displayed here.</p>
+        <p><div className="card-container">
+            {domainData.map((domain, index) => (
+              <div key={index} className="card">
+                <h3>{domain.name}</h3>
+                <p className="price">{domain.price}</p>
+                <p className="discounted-price">Instead of $10.99/yr</p>
+                <button className="buy-now">Buy Now</button>
+              </div>
+            ))}
+          </div></p>
         </TabPanel>
         <TabPanel>
-          <p>WordPress Hosting plans will be displayed here.</p>
+        <p><div className="card-container">
+            {domainData.map((domain, index) => (
+              <div key={index} className="card">
+                <h3>{domain.name}</h3>
+                <p className="price">{domain.price}</p>
+                <p className="discounted-price">Instead of $10.99/yr</p>
+                <button className="buy-now">Buy Now</button>
+              </div>
+            ))}
+          </div></p>
         </TabPanel>
         <TabPanel>
-          <p>Email Hosting plans will be displayed here.</p>
+        <p><div className="card-container">
+            {domainData.map((domain, index) => (
+              <div key={index} className="card">
+                <h3>{domain.name}</h3>
+                <p className="price">{domain.price}</p>
+                <p className="discounted-price">Instead of $10.99/yr</p>
+                <button className="buy-now">Buy Now</button>
+              </div>
+            ))}
+          </div></p>
         </TabPanel>
         <TabPanel>
-          <p>VPS Hosting Server plans will be displayed here.</p>
+        <p><div className="card-container">
+            {domainData.map((domain, index) => (
+              <div key={index} className="card">
+                <h3>{domain.name}</h3>
+                <p className="price">{domain.price}</p>
+                <p className="discounted-price">Instead of $10.99/yr</p>
+                <button className="buy-now">Buy Now</button>
+              </div>
+            ))}
+          </div></p>
         </TabPanel>
         <TabPanel>
-          <p>Free Hosting plans will be displayed here.</p>
+        <p><div className="card-container">
+            {domainData.map((domain, index) => (
+              <div key={index} className="card">
+                <h3>{domain.name}</h3>
+                <p className="price">{domain.price}</p>
+                <p className="discounted-price">Instead of $10.99/yr</p>
+                <button className="buy-now">Buy Now</button>
+              </div>
+            ))}
+          </div></p>
         </TabPanel>
       </Tabs>
     </div>

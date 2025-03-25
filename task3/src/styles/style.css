@@ -2,7 +2,7 @@
   padding: 2rem;
   max-width: 1300px;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: #f8f9fa;
 }
 
 
@@ -71,7 +71,7 @@
 .card-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  gap: 32px;
 }
 
 
@@ -161,4 +161,46 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .domain-list-container {
+    max-width: 1024px;
+    padding: 1rem; /* Zvogëlojmë pak më shumë padding */
+  }
 
+  .react-tabs__tab-list {
+    gap: 12px; /* Zvogëlojmë distancën mes tabs */
+    margin: 0 0 24px; /* Zvogëlojmë hapësirën poshtë */
+  }
+
+  .react-tabs__tab {
+    font-size: 12px; /* Tekst më i vogël për tabs */
+    padding: 9px 0; /* Zvogëlojmë padding për t’i bërë më kompaktë */
+    min-width: 80px; /* Kufizojmë gjerësinë që të përshtaten më shumë tabs */
+  }
+
+  .card-container {
+    gap: 10px; /* Zvogëlojmë hapësirën mes kartave */
+  }
+
+  .card {
+    padding: 14px; /* Edhe më kompakt */
+    gap: 6px;
+  }
+
+  .card h3 {
+    font-size: 18px; /* Më e vogël për të kursyer hapësirë */
+  }
+
+  .card .price {
+    font-size: 16px; /* Më e vogël */
+  }
+
+  .card .discounted-price {
+    font-size: 11px; /* Më e vogël */
+  }
+
+  .buy-now {
+    font-size: 11px; /* Tekst më i vogël */
+    padding: 6px;
+  }
+}
